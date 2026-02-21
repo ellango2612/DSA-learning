@@ -3,34 +3,52 @@
 # # You may change 0's to 1's to connect the 2 islands to form 1 island.
 # # Return the smallest numebr of 0's you must flip to connect the 2 islands.
 
-# from collections import deque
+# thought process: DFS (to mark the first island) then multi-source BFS (to find the shortest path to the other island)
 
-# def shortestBridge(grid):
-#     if not grid or not grid[0]:
-#         return -1
-#     rows = len(grid)
-#     cols = len(grid[0])
-#     visited = set()
-#     queue = deque()
-#     found = False
+from collections import deque
 
-#     def dfs(i,j):
-#         # operation: finding all 1's in the first island and mark visited
-#         if grid[i][j] == 1 and (i,j) not in visited:
-#             queue.aapend([i,j])
-#             visited.add((i,j))
-#             # recurse on 4 neighbors
-#             for nr,nc in [(r+1,c), (r,c+1),(r,c-1),(r-1,c)]:
-#                 if grid[nr][nc] == 1 and (nr,nc) not in visited:
-#                     dfs(nr,nc)
-#         # finding the first 1 to kick off dfs
-#         for r in range(rows):
-#             for c in range(cols):
-#                 if grid[r][c] == 1 and (r,c) not in visited:
-#                     found = True
-    
-#     r,c = queue.popleft()
-#     for nr,nc in [(r+1,c), (r,c+1),(r,c-1),(r-1,c)]:
+def shortestBridge(grid):
+    if not grid or not grid[0]:
+        return -1
+    rows = len(grid)
+    # cols = len(grid[0]) ; nxn matrix
+    visited = set()
+    queue = deque()
+    found = False # mark as soon as we found the second island
+
+    def dfs(r,c):
+        # operation: finding all 1's in 1 island and mark visited
+        if grid[r][c] == 1 and (r,c) not in visited:
+            queue.append([r,c,0])
+            visited.add((r,c))
+            # recurse on 4 neighbors
+            for nr,nc in [(r+1,c), (r,c+1),(r,c-1),(r-1,c)]:
+                if 0<=nr<rows and 0<=nc<rows and grid[nr][nc] == 1 and (nr,nc) not in visited:
+                    dfs(nr,nc)
+
+        # finding the first 1 (first island) to kick off dfs
+        for r in range(rows):
+            if found:
+                break
+            for c in range(rows):
+                if grid[r][c] == 1:
+                    dfs(r,c)
+                    found = True
+                    break
+
+    # BFS to find the second island - when reaching the first 1
+    while queue:
+        r,c,dist = queue.popleft()
+        for nr,nc in [(r+1,c), (r,c+1),(r,c-1),(r-1,c)]:
+            if 0<=nr<rows and 0<=nc<rows and (nr,nc) not in visited:
+                if grid[nr][nc] == 1:
+                    return dist
+                else:
+                    visited.add((nr,nc))
+                    queue.append([nr,nc,dist+1])
+    return -1
+
+
         
 
 
