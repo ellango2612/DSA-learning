@@ -1,1 +1,15 @@
 This is a place to take notes 
+
+1. DFS flooding - Shortest bridge problem
+
+- First, we have to understand what is being asked: Given 2 islands, find the shortest path from 1 to the other.
+-> First instinct: BFS for shortest path
+Whenever you see "shortest distance" in a grid, BFS should immediately come to mind. BFS explores layer by layer, so the first time you reach the destination, you're guaranteed it's the shortest path.
+
+But BFS from where to where? You could try BFS from every cell of island 1 to every cell of island 2 and take the minimum — but that's wasteful.
+
+Key insight: multi-source BFS
+Instead of running BFS once per cell, you can seed the BFS queue with all cells of island 1 at once, all at distance 0. Then BFS naturally expands outward from the entire island simultaneously. The first time any expansion touches island 2, that's your answer. This is called multi-source BFS.
+
+
+The overall thought process is: shortest path → BFS, but from an entire island at once → need to identify that island first → DFS. Two classic tools composed together.
