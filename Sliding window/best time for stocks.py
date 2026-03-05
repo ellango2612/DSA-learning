@@ -44,3 +44,19 @@ def maxProfit(self, prices):#prices = [10,1,5,6,7,1], l = 1, r = 2, max_profit =
 
 # Time: O(n)
 # Space: O(1)
+
+
+
+# 121. Best Time to Buy and Sell Stock (March 5, 2026) 2:44-3pm
+
+def maxProfit(self, prices):
+    min_price = float('inf')
+    max_profit = 0
+    for i in range(len(prices)):
+        min_price = min(min_price, prices[i])
+        max_profit = max(prices[i]-min_price, max_profit)
+    return max_profit
+
+# input = [7,1,5,3,6,4], min_price = 1, max_profit = 5
+
+#Time: O(n), space: O(1) - only need 2 additional vars
