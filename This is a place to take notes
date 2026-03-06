@@ -16,3 +16,4 @@ The overall thought process is: shortest path → BFS, but from an entire island
 
 March 5, 2026:
 - Did best time to buy/sell stocks (easy) very well!! 1 pass greedy in 14 mins
+- VERY WEAK in 2D arrays - do more probs (Pascal's triangle, etc.) (REDO tmr)
