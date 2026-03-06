@@ -17,3 +17,9 @@ The overall thought process is: shortest path → BFS, but from an entire island
 March 5, 2026:
 - Did best time to buy/sell stocks (easy) very well!! 1 pass greedy in 14 mins
 - VERY WEAK in 2D arrays - do more probs (Pascal's triangle, etc.) (REDO tmr)
+- still weak with bfs for number of provinces. practice both ways for this problem: 
+
+March 6, 2026:
+1. redoing dfs numProvinces on March 6, 26: 90%, need to be more careful
+1.2. GOODJOB ON THE BFS/ITERATIVE SOLUTION !! IT'S PERFECT!
+2. rotting oranges: REMEMBER to CHECK BOUNDS first before checking if the neighboring orange is fresh, also minutes (var) will overcount 1 so have to return minutes - 1 (but do max(0, mins-1) bc we don't want to return -1)
