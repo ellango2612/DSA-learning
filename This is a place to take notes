@@ -24,4 +24,18 @@ March 6, 2026:
 1.2. GOODJOB ON THE BFS/ITERATIVE SOLUTION !! IT'S PERFECT!
 2. rotting oranges: REMEMBER to CHECK BOUNDS first before checking if the neighboring orange is fresh, also minutes (var) will overcount 1 so have to return minutes - 1 (but do max(0, mins-1) bc we don't want to return -1)
 3. OMGGGG! I did 01 matrix (multi-source bfs) perfectly!! okay, need to remember that we always need to keep tracked of visited cells/items to not enqueue it multiple times!! keep a visited set or turn all 1s into 0s to mark them as visited.
-4.
+A new technique for multi-source BFS that I have to rmb: we can track visited cells from the return matrix: if the cell == 0, it might have been correct/UNVISITED -> enqueue it and modify it; if not, do not.
+4. guess number high or low: 1st time binary search 
+5. flood fill
+6. surrounded regions
+7. pacific-atlantic water flow
+8. 
+
+2 important applications of BFS need to be rmb:
+- find a path from a start node to a dest node
+- find shortest path from a start node to dest node (Djkstra's too)
+
+March 7, 2026:
+1. guess number high or low - redo: ez binary search - gj!!!!
+2. valid perfect square
+2. number of enclaves
