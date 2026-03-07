@@ -16,3 +16,5 @@ def guessNumber(n):
 # tracing an example: Input: n = 10, pick = 6 -> output: 6, lo = 1, hi = 10, mid = 5, lo = 6 -> mid = 8 -> hi = 7
 # -> mid = 6 -> return 6 -> yay!!!!
 
+# Time: O(logn), Space: O(1)
+

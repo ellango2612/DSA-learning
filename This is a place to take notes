@@ -37,5 +37,10 @@ A new technique for multi-source BFS that I have to rmb: we can track visited ce
 
 March 7, 2026:
 1. guess number high or low - redo: ez binary search - gj!!!!
-2. valid perfect square
+2. valid perfect square: remember that we have to check for edge case: num = 1 -> cannot go from lo = 1 to hi = num//2
+3. arranging coins: great job of understanding.
+
+but REMEMBER: WHILE BINARY SEARCHING, WE DO NOT MOVE MID. WE MOVE LO & HI IF MID IS TOO LOW OR TOO HIGH.
+
+4. 
 2. number of enclaves
