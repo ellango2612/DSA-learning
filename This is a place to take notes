@@ -73,6 +73,25 @@ DO RMB that we HAVE TO RETURN TRUE/FALSE with the bfs function to use that to RE
 
 March 8: GOALS: 11 new probs done!!
 
+1.1 same tree: almost perf!! redo tmr; rmb that ; cố gắng học thêm AVL tree, etc..
+
+1. 559 - Maximum Depth of N-ary Tree: getting th base cases wrong!! rmb to account for a tree with no children;
+giải lại bài này vs bfs (EP - graph 2)
+
+2. validateBinaryTreeNodes: great job! finally got it. remember a few thing:
+- DO NOT assume the root is 0. have to find root! (has no incoming edges)
+- if there are many roots -> disconnected forest -> false
+- if cannot visit all nodes -> false
+
+mai lam lai dfs?? (EP)
+
+3. 515 - Find Largest Value in Each Tree Row: idea is great and correct, but execution wrong ! think abt BFS level-by-level traversal again and redo. (watch EP)
+
+HW (EP): symmetric tree, invert BT, balanced BT, BT paths
+Applications/ DS to study: AVL tree, B-Tree, red-black tree, segment tree, Trie, quad tree (geo hash index, image processing), probability tree
+
+4. 
+
 March 9: 8 new probs done
 
 March 10: 8 new probs done

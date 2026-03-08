@@ -6,5 +6,4 @@ def sameTree(p,q):
         return True
     if not p or not q:
         return False
-    if p.value == q.value:
-        return sameTree(p.left,q.left) and sameTree(p.right,q.right)
+    return p.val == q.val and self.sameTree(p.left, q.left) and self.sameTree(p.right, q.right)
