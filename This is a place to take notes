@@ -58,7 +58,14 @@ Others: BS, Search insert position, find first and last ele in sorted array, sea
 
 5.5. 547 - Number of Provinces (redoing after march 6): 100% PERFECT! GREAT JOB THU!! <3
 
-6. 802 - Find Eventual Safe States
+6. 802 - Find Eventual Safe States: first way done today!
+do second way tmr!! (EP)
 
+7. 785 - Is Graph Bipartite?
+great job one this one!! assigning 2 colors sequentially to one first node then its neighbors using bfs, then checking and returning False when neighbor's color is the same as current's color is a very good move!!
 
-2. number of enclaves
+DO RMB that we HAVE TO RETURN TRUE/FALSE with the bfs function to use that to RETURN TRUE/FALSE IN our main function!!
+
+8. number of islands: GREAT JOB - PERFFFF
+
+9. same tree: almost..... almost correct, redo tmrrr
