@@ -35,12 +35,30 @@ A new technique for multi-source BFS that I have to rmb: we can track visited ce
 - find a path from a start node to a dest node
 - find shortest path from a start node to dest node (Djkstra's too)
 
-March 7, 2026:
+March 7, 2026: GOAL: 12 probs
+
 1. guess number high or low - redo: ez binary search - gj!!!!
 2. valid perfect square: remember that we have to check for edge case: num = 1 -> cannot go from lo = 1 to hi = num//2
 3. arranging coins: great job of understanding.
 
 but REMEMBER: WHILE BINARY SEARCHING, WE DO NOT MOVE MID. WE MOVE LO & HI IF MID IS TOO LOW OR TOO HIGH.
 
-4. 
+4. 540 - Single Element in a Sorted Array: WOWW - i understood a medium binary search question!
+for this one, we are searching for the leftmost position where the indexing pattern (duplicated) breaks, so we are searching for a boundary, not the exact number anymore. we need to include mid in the search, so if the XOR operation works, we need to search to the right of (1 pass) mid, but if it doesn't, we must assign hi = mid since mid could be the answer.
+we set the stopping condition lo < hi because we want to narrow down to 1 ele left: when lo == hi and we return
+nums[lo] or nums[hi].
+
+EP has a diff solution! review this one!
+
+Others: BS, Search insert position, find first and last ele in sorted array, search a 2D matrix, successful pairs of spells and potions; what is BS on answer?
+<!-- 
+* Types of probs with DFS: Find connected components, find a path from 1 node to another (shortest: bfs), detecting cycles, topological sort -->
+
+5. Keys and Rooms - traversing dfs - classic!!! great job, could do everything except for 1 small bug. rmb to interpret time + space complexity too
+
+5.5. 547 - Number of Provinces (redoing after march 6): 100% PERFECT! GREAT JOB THU!! <3
+
+6. 802 - Find Eventual Safe States
+
+
 2. number of enclaves
