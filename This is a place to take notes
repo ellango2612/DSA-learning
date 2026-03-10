@@ -90,9 +90,20 @@ mai lam lai dfs?? (EP)
 HW (EP): symmetric tree, invert BT, balanced BT, BT paths
 Applications/ DS to study: AVL tree, B-Tree, red-black tree, segment tree, Trie, quad tree (geo hash index, image processing), probability tree
 
-4. 
+3.1. (not done) Two Sum
 
-March 9: 8 new probs done
+4. 1748 - Sum of Unique Elements: pretty ez, but be careful with .get() call. it takes 2 argument: a preferred first
+and a default second (0 in this case)
+
+5. 383 - Ransom Note (ez) - pretty good! analyze time/space complexity again
+
+other probs (EP HW): find lucky int in an array, max number of balls in a box, jewels and stones, optimal partition of string
+
+6. 56 - merge intervals - not done
+
+March 9: 13 new probs 
+
+0.5. merge intervals (not too new): great job, almost good - remember to sort (which always takes O(nlogn)) so that we can only compare the last interval with the current one -> modify the last interval in the new array if merged
 
 March 10: 8 new probs done
 

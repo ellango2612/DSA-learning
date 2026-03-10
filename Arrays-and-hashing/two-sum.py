@@ -25,10 +25,4 @@ Input: nums = [5,5], target = 10
 Output: [0,1]
 '''
 
-def twoSum(nums, target): #6:07
-    hash_map = {}
-    for i in range(len(nums)):
-        complement = target - nums[i]
-        if complement in hash_map:
-            return [hash_map[complement], i]
-        hash_map[nums[i]] = i
+# def twoSum(nums, target): #6:07
