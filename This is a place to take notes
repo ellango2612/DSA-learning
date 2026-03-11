@@ -105,9 +105,31 @@ March 9: 13 new probs
 
 0.5. merge intervals (not too new): great job, almost good - remember to sort (which always takes O(nlogn)) so that we can only compare the last interval with the current one -> modify the last interval in the new array if merged
 
+0.5: got started on insert intervals
+
 March 10: 8 new probs done
 
+1. finished insert intervals!! great job!! need to rmb that there are 3 situations the added interval could be: before, overlapping, or after. keep track of the newInterval (modified at overlapping steps) to add it to the appropriate place (before sth bigger than it)
+
+However, need to redo the EP way!! (faster and better)
+
+2. non-overlapping intervals: understood method quickly but couldn't execute well. remember to record and update END TIME.
+
+3. minimum number of arrows to burst: understood after 2 tries!! -> redo
+
 March 11: 8 new probs done
+
+1. 986 - Interval List Intersections: 2 intervals! return non-overlapping sections -> need to iteration on 2 intervals separatey and only increment the one with the lower END.
+
+2. 1288 - Remove Covered Intervals: I understand now! need a redo tho
+approach:
+we sort by ascending start time, but in case 2 intervals have the same end time, sort also by descending end time.
+Then now we only have to worry abt end time, and the first end time should show if it covers the next interval: if its' >= iterating (intervals[1]) interval. if yes, we decrement counter, if no, we update the new end time to be current's.
+
+3. 436 - Find Right Interval:
+
+4. 
+
 
 March 12: 8 new probs done
 
