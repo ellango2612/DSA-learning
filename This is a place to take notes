@@ -127,6 +127,7 @@ we sort by ascending start time, but in case 2 intervals have the same end time,
 Then now we only have to worry abt end time, and the first end time should show if it covers the next interval: if its' >= iterating (intervals[1]) interval. if yes, we decrement counter, if no, we update the new end time to be current's.
 
 3. 436 - Find Right Interval:
+First time doing, not fully getting it yet. Redid on March 16 -> got it (first time got it)
 
 4. 
 
@@ -141,6 +142,7 @@ March 15: 8 new probs done
 
 March 16: 8 new probs done
 
+1. 436 - Find right in
 March 17: 8 new probs done
 
 March 18: 8 new probs done
