@@ -161,7 +161,14 @@ then calculate
 3. 2079 - Watering Plants: simulation problem: taking 2*i + 1 steps to refill from the river and water plant i
 great job
 
-4. 
+4. 605 - Can Place Flowers (ez)
+ok job - redo: can place flowers anywhere if i==0 and (its before is 0 or i is the starting point) and ( i is at ending or i+1 == 0)
+
+5. 206 - Reverse Linked List (ez)
+almost there!!!! 1 more redo
+
+6. 
+
 
 March 19: 8 new probs done
 
