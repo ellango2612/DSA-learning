@@ -165,10 +165,12 @@ great job
 ok job - redo: can place flowers anywhere if i==0 and (its before is 0 or i is the starting point) and ( i is at ending or i+1 == 0)
 
 5. 206 - Reverse Linked List (ez)
-almost there!!!! 1 more redo
+almost there!!!! 1 more redo (rewatch EP)
 
-6. 
+6. 21 - Merge Two Sorted Lists (ez)
+great job on the recursive solution (space O(n+m)) but O(1) space for iterative solution. implement this!! later?
 
+7. 876 - Middle of the Linked List
 
 March 19: 8 new probs done
 
