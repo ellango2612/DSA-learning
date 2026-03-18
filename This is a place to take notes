@@ -129,8 +129,6 @@ Then now we only have to worry abt end time, and the first end time should show 
 3. 436 - Find Right Interval:
 First time doing, not fully getting it yet. Redid on March 16 -> got it (first time got it)
 
-4. 
-
 
 March 12: 8 new probs done
 
@@ -142,10 +140,24 @@ March 15: 8 new probs done
 
 March 16: 8 new probs done
 
-1. 436 - Find right in
+1. 436 - Find right interval: pretty comfy, got it right on my own for the first time
+
+2. divide intervals into min groups: events/sweep line approach - we essentially need to find the minimum number of groups we can
+divide intervals into without them overlapping one another. in other words, the max. number of events/intervals happening simultaneously
+we do this by an events recording method: 
+create an events list which has [(start, +1), (end, -1)] for each interval. then, proceeds to update max_count everytime we 
+calculate current_count: the current max groups of number of intervals 
+
 March 17: 8 new probs done
 
 March 18: 8 new probs done
+
+1. 2580 - Count Ways to Group Overlapping Ranges
+great job! note that the number of ways to group overlapping ranges = 2^(number of overlapping ranges) -> first thing is to merge all intervals (sort first)
+then calculate
+
+2. 352 - Data Stream as Disjoint Intervals (HARD)
+
 
 March 19: 8 new probs done
 
