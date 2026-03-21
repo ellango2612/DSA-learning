@@ -173,6 +173,20 @@ great job on the recursive solution (space O(n+m)) but O(1) space for iterative 
 7. 876 - Middle of the Linked List
 SOLVED! O(n) time and O(1) space?
 
+
 March 19: 8 new probs done
+
+1. 83 - remove duplicates from sorted list
+
+DO NOT advance curr if found a duplicate, just link it to curr.next.next (so that we might take off many duplicates at a time)
+
+2. 203 - Remove Linked List Elements
+decent work, redo later!!
+
+3. 234 - Palindrome Linked List
+ok job. remember that when comparing 2 linked lists, they are only the same if every node is the same. we have to traverse the whole lists to know for sure
+
+4. 160 - Intersection of Two Linked Lists
+
 
 March 20: 8 new probs done
