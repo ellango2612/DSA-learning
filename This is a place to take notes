@@ -186,7 +186,15 @@ decent work, redo later!!
 3. 234 - Palindrome Linked List
 ok job. remember that when comparing 2 linked lists, they are only the same if every node is the same. we have to traverse the whole lists to know for sure
 
-4. 160 - Intersection of Two Linked Lists
+4. 160 - Intersection of Two Linked Lists:
+
+since if 2 list intersect, they will have the same tail and if we have 2 pointers tracing one after the other, they will meet at the intersection point.
 
 
 March 20: 8 new probs done
+
+March 21 (saturday):
+
+1. finished intersection
+
+2. 
