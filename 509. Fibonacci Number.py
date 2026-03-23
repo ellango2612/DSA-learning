@@ -8,3 +8,5 @@ def fib(n):
         return n
     else:
         return fib(n-1) + fib(n-2)
+    
+# REMEMBER: O(2^n) time and O(n) space because WE WILL HAVE SAVED N+1 SPACES (every time calling n, n-1, n-2, etc.) UNTIL RETURNING

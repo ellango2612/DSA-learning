@@ -200,6 +200,16 @@ March 21 (saturday):
 
 March 22 (sunday):
 
-1. 509 - pretty ez - a revision of recursion
+1. 509 - pretty ez - a revision of recursion (fib sequence): for this one, remember that time complexity is 2^n since at every step (recursive), the number of calls doubles (times 2). if at 1 step, the call is complicated, overal time complexity = (time of 1 call)* 2^n
+
+memory allocation in python: every time we call a function, the function will be added to the stack, up until we return the function (at this point the stack will remove that function).
+
+-> ALWAYS consider added stack/memory allocation in recursions.
+
+anything recursion/ sorting (which uses recursion) WILL result in space complexity > 1.
+
+
 
 2. 326 - power of three: great job, but think more about putting base cases first -> recursive steps. rewatch recursion lecture.
+
+3. 
