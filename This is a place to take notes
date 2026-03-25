@@ -208,7 +208,26 @@ memory allocation in python: every time we call a function, the function will be
 
 anything recursion/ sorting (which uses recursion) WILL result in space complexity > 1.
 
+e.g. DFS space comp = O(n), not O(2^n)
 
+garbage collector (put in when not using sth anymore) ~ memory allocation: talking abt RAM!!! (memory) and not disk
+
+garbage collector will classify types of garbage and collect 1 type after another; at one point it will stop the program and collect all the trash, at which point the memory will go down.
+
+
+recursive vs iterative:
+
+- readability: recursive better
+- space complexity: iterative is O(1), faster than recursive -> memory efficient; recursion creates more mem. due to the call stack
+- recursion: more overhead due to function calls; iteration: no overhead from func calls (only for/while loops)
+- recursion: more mathy and elegant code; iteration: easier to debug (printing and tracing)
+- recursion: suitable for probs that can be BROKEN DOWN into subprobs (sorting) or trying all possibilities (BACKTRACKING)/ DIVIDE AND CONQUER;
+iteration: suitable for sequential operations
+
+
+*BINARY SEARCH* using iterative method is easier for debugging!!
+
+memoization helps with the stackoverflow prob a lot!!
 
 2. 326 - power of three: great job, but think more about putting base cases first -> recursive steps. rewatch recursion lecture.
 
