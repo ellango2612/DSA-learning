@@ -9,3 +9,8 @@ def powerofthree(n):
     if n%3 != 0:
         return False
     return powerofthree(n//3)
+
+# O(logn) time and space
+
+# doing recursively:
+

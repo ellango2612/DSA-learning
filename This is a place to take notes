@@ -231,4 +231,8 @@ memoization helps with the stackoverflow prob a lot!!
 
 2. 326 - power of three: great job, but think more about putting base cases first -> recursive steps. rewatch recursion lecture.
 
-3. 
+3. 202 - happy number: great job on the recursive solution! remember that we have to return ALWAYS in the recursive funcs
+
+March 25 (wed):
+
+1.

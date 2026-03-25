@@ -18,3 +18,25 @@ def happyNumber(n):
     return False
 
 # O(logn) time and O(logn) space
+def happyNumber(n):
+
+    def nextNum(num):
+        res = 0
+        while num > 0:
+            res += (num%10)**2
+            num //= 10
+        return res
+    
+    seen = set()
+    def happy(n, seen):
+        m = nextNum(n)
+        if m == 1:
+            return True
+        if m not in seen:
+            seen.add(m)
+            happy(m, seen)
+        elif m in seen:
+            return False
+        
+    happy(n, seen)
+# 19: m = 82, seen = (82,...)
