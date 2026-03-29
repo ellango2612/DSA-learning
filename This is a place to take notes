@@ -235,4 +235,7 @@ memoization helps with the stackoverflow prob a lot!!
 
 March 25 (wed):
 
-1.
+1. Power of four: can do the old (recursive) way just like power of three but that'll be O(logn) time and space
+But to make O(1) time and space, use bit manipulation and math -> done but practice again!!
+
+2. 1837 - Sum of Digits in Base K: later (bit stuff again)
