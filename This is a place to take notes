@@ -239,3 +239,11 @@ March 25 (wed):
 But to make O(1) time and space, use bit manipulation and math -> done but practice again!!
 
 2. 1837 - Sum of Digits in Base K: later (bit stuff again)
+
+
+March 29:
+
+1. 2089: remember that defaultdict() needs a type. e.g: defaultdict(list); AND: sorting takes O(nlogn) time; AND: returning a dict's key if it
+is not empty: return dict.get(target, [])
+
+2.
