@@ -246,4 +246,40 @@ March 29:
 1. 2089: remember that defaultdict() needs a type. e.g: defaultdict(list); AND: sorting takes O(nlogn) time; AND: returning a dict's key if it
 is not empty: return dict.get(target, [])
 
+redo second way tmr
+
+redo count sort way tmr
+
 2.
+
+*Sorting algorithms* 
+
+1. Bubble sort !! On^2
+2. insertion sort On^2
+3. selection sort On^2
+4. quicksort !! O(nlogn) avg., worst case O(n^2)
+5. mergesort !! O(nlogn)
+6. heapsort O(nlogn)
+7. counting sort O(n)
+8. radix sort O(n)
+
+1. Bubble sort: simplest sorting algorithm:
+- traverse from left, compare adjacent elements and the higher one placed on the right -> largest ele move to the right end at first
+- process goes on for second largest -> ends when array is sorted (swapping 2 adjacent ones at a time)
+
+-> O(n^2) time - 2 nested loops, and O(1) space
+
+2. Merge sort:
+- divide array into 2 halves -> sort each half -> merge the sorted halves back tgt
+-> the dividing then sorting (merging) process is repeated till array is sorted
+- process: have 2 ptrs for 2 arrays; compare 2 eles (pointed to by 2 ptrs, at the beginning of 2 arrays)-> put the smaller ele in the res array and increment ptr
+
+-> O(nlogn) time and O(n) space
+
+3. Quick sort:
+- eles divided into subarrays by picking a pivot ele; position the pivot ele in such a way: eles smaller than pivot ele is to its left, eles greater than pivot 
+is to its right
+- the left and right arrays are divided -> sorted using the same method till each array has 1 ele left -> everything is sorted -> combine them
+
+-> implement this later
+Time: O(nlogn), worst: O(n^2), space: O(1)
