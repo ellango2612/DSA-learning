@@ -302,5 +302,6 @@ try to implement the 2nd way (O(nlogn) - EP)! HAVE TO REWATCH THAT FINAL PART IN
 
 4. 1051: ez; but remember: nums.sort() sorts nums and returns None, but a = sorted(nums) makes an 'a' array that is nums sorted.
 
-5. 88 - merge sorted array
+5. 88 - merge sorted array: oooo a very nice method: traversing and replacing from bottom up (the biggest first) to avoid overwriting in nums1
+
 
