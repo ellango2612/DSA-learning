@@ -293,4 +293,7 @@ Time: O(nlogn), worst: O(n^2), space: O(1)
 1. 1365 - count smaller ele: great job on doing count sort - rmb to revise!!
 O(n) time and O(1) space
 
-2.
+2. 2545: whenever sorting a list of list (matrix), use list.sort(key=lambda x: the thing we sort by (column?)), ez.
+find out later how to sort by column instead of row!!!! (claude)
+
+3.
