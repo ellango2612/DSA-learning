@@ -296,4 +296,4 @@ O(n) time and O(1) space
 2. 2545: whenever sorting a list of list (matrix), use list.sort(key=lambda x: the thing we sort by (column?)), ez.
 find out later how to sort by column instead of row!!!! (claude)
 
-3.
+3. 1122: great job on the count sort solution!!!! O(n+k where k = 1001) time and O(k) or O(1) space
