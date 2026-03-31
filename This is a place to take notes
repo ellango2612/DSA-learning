@@ -283,3 +283,14 @@ is to its right
 
 -> implement this later
 Time: O(nlogn), worst: O(n^2), space: O(1)
+
+*learn sorting syntax in python*
+
+** if the size of each ele is relatively small (till 100? or so), good to use count sort since it's O(n) and dependent on size of each ele
+
+*LC*
+
+1. 1365 - count smaller ele: great job on doing count sort - rmb to revise!!
+O(n) time and O(1) space
+
+2.
