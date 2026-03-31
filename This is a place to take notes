@@ -297,3 +297,10 @@ O(n) time and O(1) space
 find out later how to sort by column instead of row!!!! (claude)
 
 3. 1122: great job on the count sort solution!!!! O(n+k where k = 1001) time and O(k) or O(1) space
+
+try to implement the 2nd way (O(nlogn) - EP)! HAVE TO REWATCH THAT FINAL PART IN SORTING VIDEO
+
+4. 1051: ez; but remember: nums.sort() sorts nums and returns None, but a = sorted(nums) makes an 'a' array that is nums sorted.
+
+5. 88 - merge sorted array
+
