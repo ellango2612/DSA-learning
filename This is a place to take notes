@@ -305,3 +305,9 @@ try to implement the 2nd way (O(nlogn) - EP)! HAVE TO REWATCH THAT FINAL PART IN
 5. 88 - merge sorted array: oooo a very nice method: traversing and replacing from bottom up (the biggest first) to avoid overwriting in nums1
 
 
+March 31:
+
+6. 2144 - Minimum Cost of Buying Candies With Discount: (ez)
+it was much simpler than i thought: just sort reverse -> every third item is free since it's guaranteed the smallest item of the 3.
+
+
